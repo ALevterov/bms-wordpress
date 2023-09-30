@@ -209,6 +209,34 @@ items.forEach((item, index) => {
 
 scrollableArea.innerHTML = scrollAreaInnerHTML
 
+const sItems = document.querySelectorAll('.s_item_container')
+
+const intersectionCallback = index => {
+  window.dispatchEvent(
+    new CustomEvent('item-in-view', {
+      bubbles: true,
+      composed: true,
+      detail: {
+        index,
+      },
+    })
+  )
+}
+
+let threshold
+if (!isMobile) {
+  threshold = 1
+} else {
+  threshold = 0.8
+}
+
+sItems.forEach((item, i) => {
+  const observer = new IntersectionObserver(() => intersectionCallback(i), {
+    threshold: threshold,
+  })
+  observer.observe(item)
+})
+
 const reviewListener = e => {
   const index = e.detail.index
   currentAuthor = currentArray[index]
