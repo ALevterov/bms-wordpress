@@ -1,0 +1,25 @@
+.custom_input {
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  font-kerning: none;
+
+  color: #fff;
+  padding-top: 10px;
+  width: 16.3vw;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  border-radius: 0;
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .custom_input {
+    width: 100%;
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,68 @@
+.case_container {
+  border-radius: 18px;
+  border: 1px solid #ababab;
+  background-color: transparent;
+  padding: 2.34375vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5625vw;
+}
+.case_title {
+  color: #fff;
+  text-align: center;
+  font-size: 1.5625vw;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  font-kerning: none;
+}
+.case_btn {
+  border-radius: 11px;
+  background-color: var(--orange);
+  border: 1px solid var(--orange);
+  backdrop-filter: blur(13px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.9854vw;
+  color: #262626;
+  font-size: 1.302vw;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 120%;
+  font-kerning: none;
+
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+.case_btn:hover {
+  background-color: #262626;
+  color: var(--orange);
+}
+
+@media screen and (max-width: 768px) {
+  .case_container {
+    border-radius: 13.5px;
+    border: 0.75px solid #ababab;
+    gap: 22.5px;
+    align-items: center;
+    padding: 33px;
+    width: 283px;
+  }
+  .case_title {
+    font-size: 22.5px;
+    white-space: nowrap;
+  }
+  .case_btn {
+    border-radius: 8.25px;
+    background: #f0a700;
+    backdrop-filter: blur(9.75px);
+    width: 210px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 18.75px;
+  }
+}

@@ -1,0 +1,255 @@
+.first_mobileIconPhone {
+  display: none;
+}
+.first_section {
+  height: 100vh;
+  padding-top: var(--section-offset);
+  padding-bottom: 13.277vh;
+}
+.first_section > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.first_inscription {
+  display: flex;
+  color: #000;
+  font-kerning: none;
+  font-size: 2.3148vh;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  gap: 7px;
+  margin-top: 6.518vh;
+}
+.first_inscription span {
+  font-weight: 500;
+}
+.first_centralText {
+  margin-top: 10.555vh;
+  color: #000;
+  text-align: center;
+  font-kerning: none;
+  font-size: 6.018vh;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  display: flex;
+  flex-direction: column;
+}
+.first_centralText > .bold {
+  font-weight: 800;
+}
+.first_jaw {
+  color: #000;
+  font-kerning: none;
+  font-size: 2.3148vh;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+
+  border-radius: 0.5208vw;
+  background: #f8ac00;
+  padding: 11px 18px;
+  margin-top: 20px;
+}
+.first_phoneBlock {
+  margin-top: 10.444vh;
+  display: flex;
+
+  gap: 40px;
+  align-items: center;
+}
+.first_phoneBlock .right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.first_phoneBlock .right .call {
+  color: #000;
+  font-size: 2.3148vh;
+  font-kerning: none;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 1.6148vh 9px;
+  border-radius: 0.5208vw;
+  background: #f8ac00;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.first_next {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  gap: 0.52vw;
+}
+.first_next .progress {
+  position: relative;
+  height: 137px;
+  width: 2px;
+  background-color: #b9b6b6;
+  overflow: hidden;
+}
+.first_next .progress:before {
+  display: block;
+  content: '';
+  position: absolute;
+  height: 50px;
+  background-color: var(--orange);
+  left: 0;
+  /* top: 0; */
+  animation-name: next;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  width: 2px;
+}
+.first_next .text {
+  color: #4e4e4e;
+  font-size: 15px;
+  font-kerning: none;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+.first_mobileHelper {
+  display: none;
+}
+.first_helper {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  display: none;
+}
+@keyframes next {
+  0% {
+    top: -50px;
+  }
+  100% {
+    top: 100%;
+  }
+}
+.first_phoneBlock .left {
+  font-weight: 500;
+}
+/* .home_bgVideo {
+  display: block;
+}
+.home_bgVideo_mobile {
+  display: none;
+} */
+@media screen and (max-width: 768px) {
+  /* .home_bgVideo {
+    display: none;
+  }
+  .home_bgVideo_mobile {
+    display: block;
+  } */
+  .first_helper {
+    display: block;
+  }
+  .first_mobileIconPhone {
+    display: flex;
+    align-items: center;
+  }
+  .first_mobileIconPhone svg {
+    width: 22.404px;
+    height: 22.404px;
+  }
+  .first_section {
+    padding-bottom: 30px;
+    height: 100vh;
+  }
+  .first_section > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100vh - var(--section-offset));
+  }
+  .first_inscription {
+    color: #000;
+    text-align: center;
+    font-kerning: none;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-top: 0;
+    flex-direction: column;
+    gap: 0;
+  }
+  .first_centralText {
+    color: #000;
+    text-align: center;
+    font-kerning: none;
+    font-size: 28.401px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-top: 0;
+  }
+  .first_jaw {
+    margin-top: 20px;
+    border-radius: 3.75px;
+    padding: 8px 22px;
+    font-size: 12px;
+    margin-top: 0;
+  }
+  .first_section .first_phoneBlock {
+    gap: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 0;
+    width: 100%;
+  }
+  .first_phoneBlock .left {
+    white-space: nowrap;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+  }
+  .first_phoneBlock .right {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 17px;
+  }
+  .first_phoneBlock .right svg {
+    display: none;
+    width: 22.404px;
+    height: 22.404px;
+  }
+  .first_phoneBlock .right .call {
+    font-size: 11px;
+    padding: 9px 10px;
+    white-space: nowrap;
+  }
+  .first_next {
+    position: static;
+    gap: 7.5px;
+  }
+  .first_next .text {
+    font-size: 15px;
+  }
+  .first_next .progress {
+    width: 0.75px;
+    height: 137.25px;
+  }
+  .first_next .progress:before {
+    height: 50px;
+    left: 0;
+    width: 0.75px;
+  }
+  .first_mobileHelper {
+    height: 0;
+    width: 0;
+    display: block;
+    visibility: hidden;
+  }
+}

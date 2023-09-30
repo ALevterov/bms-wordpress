@@ -1,0 +1,15 @@
+.title_h1 {
+  color: #000;
+  font-size: 1.1718vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: center;
+  font-kerning: none;
+}
+@media screen and (max-width: 768px) {
+  .title_h1 {
+    font-size: 20px;
+  }
+}

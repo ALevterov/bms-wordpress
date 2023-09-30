@@ -1,0 +1,127 @@
+.services_section {
+  background: rgba(239, 239, 239, 0.9);
+  padding-top: 5.208vw;
+}
+.services_title {
+  margin-bottom: 5.208vw;
+}
+
+.services_secondContainer {
+  display: flex;
+  gap: 4.11458333vw;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin-top: 2.604vw;
+}
+.services_thirdContainer {
+  display: flex;
+  gap: 1.0416vw;
+  flex-wrap: nowrap;
+  margin-top: 2.604vw;
+}
+.services_thirdContainer > div {
+  /* width: calc(50% - 1.3vw); */
+  width: 50%;
+}
+.services_video2 {
+  min-width: 12.239vw;
+  height: 14.06vw;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 0.5208vw;
+}
+.services_fourthContainer {
+  margin-top: 2.604vw;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 2.2916vw;
+}
+.services_fourthContainer > .fourth_desktop {
+  width: 53.385vw;
+}
+.services_fourthContainer > .simple_card_container {
+  width: 22.6vw;
+}
+.services_video3 {
+  min-width: 21.04vw;
+  height: 23.9vw;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 0.5208vw;
+}
+.services_lastContainer {
+  margin-bottom: 2.604vw;
+}
+.services_video4 {
+  min-width: calc(50% - 1.8229vw);
+  height: auto;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 0.5208vw;
+}
+.fourth_mobile {
+  display: none !important;
+}
+.fourth_desktop {
+  display: flex !important;
+}
+@media screen and (max-width: 768px) {
+  .fourth_mobile {
+    display: flex !important;
+  }
+  .fourth_desktop {
+    display: none !important;
+  }
+  .services_section {
+    padding-top: 43px;
+  }
+  .services_title {
+    margin-bottom: 43px;
+  }
+  .services_secondContainer {
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 50px;
+  }
+  .services_thirdContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 50px;
+  }
+  .services_thirdContainer > div {
+    width: 100%;
+  }
+  .services_fourthContainer {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .services_fourthContainer > .fourth_mobile {
+    width: 100%;
+  }
+  .services_fourthContainer > .simple_card_container {
+    width: 100%;
+  }
+  .services_lastContainer {
+    margin-bottom: 50px;
+    /* padding-bottom: 30px; */
+  }
+  .services_video2 {
+    height: 100%;
+    border-radius: 7.5px;
+  }
+}

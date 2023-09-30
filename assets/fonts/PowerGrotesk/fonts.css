@@ -1,0 +1,63 @@
+/* Webfont: PowerGroteskTrial-Bold */
+@font-face {
+  font-family: 'PowerGrotesk';
+  src: url('PowerGroteskTrial-Bold.woff2') format('woff2'),
+    /* Modern Browsers */ url('PowerGroteskTrial-Bold.otf') format('opentype'); /* Safari, Android, iOS */
+  font-style: normal;
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
+	font-display: swap;
+}
+
+/* Webfont: PowerGroteskTrial-Light */
+@font-face {
+  font-family: 'PowerGrotesk';
+  src: url('PowerGroteskTrial-Light.woff2') format('woff2'),
+    /* Modern Browsers */ url('PowerGroteskTrial-Light.otf') format('opentype'); /* Safari, Android, iOS */
+  font-style: normal;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+	font-display: swap;
+}
+
+/* Webfont: PowerGroteskTrial-Medium */
+@font-face {
+  font-family: 'PowerGrotesk';
+  src: url('PowerGroteskTrial-Medium.woff2') format('woff2'),
+    /* Modern Browsers */ url('PowerGroteskTrial-Medium.otf') format('opentype'); /* Safari, Android, iOS */
+  font-style: normal;
+  font-weight: 500;
+  text-rendering: optimizeLegibility;
+	font-display: swap;
+}
+
+/* Webfont: PowerGroteskTrial-Regular */
+@font-face {
+  font-family: 'PowerGrotesk';
+  src: url('PowerGroteskTrial-Regular.woff2') format('woff2'),
+    /* Modern Browsers */ url('PowerGroteskTrial-Regular.otf')
+      format('opentype'); /* Safari, Android, iOS */
+  font-style: normal;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+	font-display: swap;
+}
+/* Webfont: PowerGroteskTrial-UltraLight */
+@font-face {
+  font-family: 'PowerGrotesk';
+  src: url('PowerGroteskTrial-UltraLight.woff2') format('woff2'),
+    /* Modern Browsers */ url('PowerGroteskTrial-UltraLight.otf')
+      format('opentype'); /* Safari, Android, iOS */
+  font-style: normal;
+  font-weight: 200;
+  text-rendering: optimizeLegibility;
+	font-display: swap;
+}
+@font-face {
+  font-family: 'SF Pro Display';
+  src: local('SF-Pro-Display Light'), local('SF-Pro-Display-Light'),
+    url('SF-Pro-Display-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+	font-display: swap;
+}
